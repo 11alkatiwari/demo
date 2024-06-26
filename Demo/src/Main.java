@@ -11,11 +11,24 @@ class A {
 
 }
 
+class B extends A {
+
+	@Override
+	void meth() {
+
+		System.out.println("B");
+	}
+
+}
+
 public class Main {
 	public static void main(String[] args) {
 
 		A a = new A();
 		a.meth();
 		a.meth(10);
+		
+		B b = new B();
+		b.meth();
 	}
 }
